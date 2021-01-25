@@ -21,6 +21,8 @@ Testing on KITTI raw data
 
 ### First. install ROS
 
+[Reference from official ROS tutorial](https://www.ros.org/)
+
 ##### Setup your sources.list
 
 ```
@@ -35,6 +37,8 @@ sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31
 curl -sSL 'http://keyserver.ubuntu.com/pks/lookup?op=get&search=0xC1CF6E31E6BADE8868B172B4F42ED6FBAB17C654' | sudo apt-key add -
 ```
 #### installation
+
+
 ```
 sudo apt update
 ```
@@ -48,7 +52,7 @@ sudo apt install ros-melodic-desktop-full
 vim ~/.bashrc
 #add this two command at bottom of the bash file
 source /opt/ros/melodic/setup.bash
-source /home/s5620/catkin_ws/devel/setup.bash
+source /home/username/catkin_ws/devel/setup.bash
 #source your bash to update status
 source ~/.bashrc
 ```
@@ -68,7 +72,7 @@ mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/
 catkin_make
 ```
-[Reference from official ROS tutorial](https://www.ros.org/)
+
 ### Second. 
 
 #### download this pakage and compile it
@@ -81,10 +85,10 @@ catkin_make
 #### run python script
 ```
 python visualize_for_lidar_img.py 
---img_path /path/to/your images dir 
---pt_path /path/to/your point cloud dir 
---gt_path /path/to/your gt label 
---calib_path /path/to/your calib dir 
+--img_path /path/to/your images dir/ 
+--pt_path /path/to/your point cloud dir/ 
+--gt_path /path/to/your gt label/ 
+--calib_path /path/to/your calib dir/ 
 ```
 
 
