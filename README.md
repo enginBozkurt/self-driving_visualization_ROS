@@ -48,26 +48,27 @@ sudo apt install ros-melodic-desktop-full
 #### setup your bash
 
 
-```
+
+```bash=
 vim ~/.bashrc
-#add this two command at bottom of the bash file
+##add this two command at bottom of the bash file
 source /opt/ros/melodic/setup.bash
 source /home/username/catkin_ws/devel/setup.bash
-#source your bash to update status
+##source your bash to update status
 source ~/.bashrc
 ```
 #### install dependencies
-```
+```bash=
 sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
 ```
 #### initialize rosdep
-```
+```bash=
 sudo apt install python-rosdep
 sudo rosdep init
 rosdep update
 ```
 #### creat your ROS Workspace
-```
+```bash=
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/
 catkin_make
@@ -76,15 +77,15 @@ catkin_make
 ### Second. 
 
 #### download this pakage and compile it
-```
+```bash=
 cd ~/catkin_make/src
 git clone https://github.com/s56207824inc/self-driving_visualization_ROS
 cd ..
 catkin_make
 ```
 #### run python script
-```
-python visualize_for_lidar_img.py 
+```python=
+python visualize_for_lidar_img.py/ 
 --img_path /path/to/your images dir/ 
 --pt_path /path/to/your point cloud dir/ 
 --gt_path /path/to/your gt label/ 
