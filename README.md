@@ -88,6 +88,10 @@ catkin_make
 roslaunch self-driving_visualization_ROS visualize.py
 ```
 
+## Note
+---
+<font color="#f00">you can base your environment to modify default.yaml in config directory</font>
+
 
 
 
