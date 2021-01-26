@@ -83,13 +83,9 @@ git clone https://github.com/s56207824inc/self-driving_visualization_ROS
 cd ..
 catkin_make
 ```
-#### run python script
-```python=
-python visualize_for_lidar_img.py/ 
---img_path /path/to/your images dir/ 
---pt_path /path/to/your point cloud dir/ 
---gt_path /path/to/your gt label/ 
---calib_path /path/to/your calib dir/ 
+#### launch and visualization
+```bash=
+roslaunch github_pakage visualize.py
 ```
 
 
