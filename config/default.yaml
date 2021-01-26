@@ -1,0 +1,16 @@
+
+#setting your path
+setting_path:
+
+    img_path: "/home/s5620/OpenPCDet/data/kitti/object/training/image_2"
+    pt_path: "/home/s5620/OpenPCDet/data/kitti/object/training/velodyne"
+    gt_path: "/home/s5620/OpenPCDet/data/kitti/object/training/label_2"
+    calib_path: "/home/s5620/OpenPCDet/data/kitti/object/training/calib"
+
+
+#add your targeted classes
+gt_class: [Car, Van, Pedestrian]
+ 
+  
+    
+    

@@ -1,0 +1,5 @@
+<launch>
+	<rosparam file = "$(find github_pakage)/config/default.yaml" />
+	<node name="kitti_node" pkg="github_pakage" type="visualize_for_lidar_img.py" />	
+	<node type="rviz" name="rviz" pkg="rviz" args="-d $(find github_pakage)/config/default.rviz" />
+</launch>
