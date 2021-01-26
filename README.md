@@ -85,7 +85,7 @@ catkin_make
 ```
 #### launch and visualization
 ```bash=
-roslaunch github_pakage visualize.py
+roslaunch self-driving_visualization_ROS visualize.py
 ```
 
 
