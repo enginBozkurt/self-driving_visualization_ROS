@@ -93,5 +93,14 @@ roslaunch self-driving_visualization_ROS visualize.py
 <font color="#f00">you can base your environment to modify default.yaml in config directory</font>
 
 
+So if you want to show your detection result you can change label directory path to predict directory path and make sure your file name follow KITTI's format and the order should be from small to big
+```
+format ex.
+image: 000000.png
+point cloud: 000000.bin
+calib: 000000.txt
+label: 000000.txt
+```
+
 
 
